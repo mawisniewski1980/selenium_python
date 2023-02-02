@@ -2,7 +2,7 @@
 
 #####   -s print statements, -v verobose
 #####   pytest -v -s
-#####   pytest -v -s .\tests\test_demo1.py
+#####   pytest -v -s .\test_cases\test_home_page.py --browser chrome
 #####   pytest -v -s --html=report.html .\tests\test_webdriver.py
 #####   pytest -v -s --html=report.html --self-contained-html .\tests\test_webdriver.py
 #####   pytest -v -s --html=.\reports\report.html --self-contained-html .\tests\test_webdriver.py

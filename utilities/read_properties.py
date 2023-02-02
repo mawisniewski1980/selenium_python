@@ -21,3 +21,12 @@ class ReadConfig:
         chrome_location = config.get('webdrivers locations', 'chrome_location')
         return chrome_location
 
+    @staticmethod
+    def get_edge_driver_path():
+        edge_location = config.get('webdrivers locations', 'edge_location')
+        return edge_location
+
+    @staticmethod
+    def get_firefox_driver_path():
+        firefox_location = config.get('webdrivers locations', 'firefox_location')
+        return firefox_location
