@@ -6,7 +6,7 @@
 import logging
 
 # create logger
-logger = logging.getLogger('simple_example')
+logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 # create console handler and set level to debug
@@ -24,7 +24,7 @@ logger.addHandler(ch)
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    #print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
     # 'application' code
     logger.debug('debug message')
     logger.info('info message')
