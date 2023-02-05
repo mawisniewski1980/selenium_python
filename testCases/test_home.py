@@ -1,9 +1,7 @@
-import pytest
-from selenium import webdriver
-
 from pageObjects.HomePage import HomePage
 from utilities.read_props import ReadCfg
 from utilities.cust_logger import LogGen
+
 
 class Test_001_Home:
     base_url = ReadCfg.get_app_url()
@@ -26,8 +24,8 @@ class Test_001_Home:
         else:
             self.homePage.save_scr('test_home_page_title')
             self.driver.close()
-            assert False
             self.logger.error("**** test_home_page_title FAIL ****")
+            assert False
 
     def test_home_page_title_fail(self, setup):
         self.logger.info("**** Test_001_Home ****")
@@ -44,6 +42,5 @@ class Test_001_Home:
         else:
             self.homePage.save_scr('test_home_page_title_fail')
             self.driver.close()
-            assert False
             self.logger.error("**** test_home_page_title_fail FAIL ****")
-
+            assert False
