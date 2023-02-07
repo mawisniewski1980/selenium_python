@@ -1,6 +1,6 @@
 import logging
 
-logging.basicConfig(filename="./Logs/automation.log",
+logging.basicConfig(filename='./Logs/automation.log',
                             format='%(asctime)s: %(levelname)s: %(message)s',
                             datefmt='%Y-%m-%d %I:%M:%S %p',
                             level=logging.INFO,
