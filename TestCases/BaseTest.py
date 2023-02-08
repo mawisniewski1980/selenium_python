@@ -1,4 +1,4 @@
-from utilities.read_props import ReadCfg
+from Utilities.read_props import ReadCfg
 
 
 class BaseTest:

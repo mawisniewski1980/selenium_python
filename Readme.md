@@ -13,15 +13,19 @@
 ## runner commands
 
 #### pytest -v -s .\testCases\TestHome.py
-#### python -m pytest -v -s testCases
-#### python -m pytest -v -s .\testCases\TestHome.py
-#### python -m pytest -v -s .\testCases\TestHome.py --browser edge
-#### python -m pytest -v -s .\testCases\TestHome.py --browser chrome
-#### python -m pytest -v -s -n=2 .\testCases\TestHome.py --browser chrome
-#### python -m pytest -v -s --html=Reports\report.html .\testCases\TestHome.py --browser chrome
+#### python -m pytest -v -s TestCases
+#### python -m pytest -v -s .\TestCases\TestHome.py
+#### python -m pytest -v -s .\TestCases\TestHome.py --browser edge
+#### python -m pytest -v -s .\TestCases\TestHome.py --browser chrome
+
+### report with two threads
+#### python -m pytest -v -s -n=2 .\TestCases\TestHome.py --browser chrome
+
+### report with html report
+#### python -m pytest -v -s --html=Reports\report.html .\TestCases\TestHome.py --browser chrome
 
 ### report with logs: --capture=tee-sys
-#### python -m pytest -v -s --capture=tee-sys --html=Reports\report.html .\testCases\test_home.py --browser chrome
+#### python -m pytest -v -s --capture=tee-sys --html=Reports\report.html .\TestCases\TestHome.py --browser chrome
 
 ## packages
 

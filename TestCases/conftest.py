@@ -3,8 +3,8 @@ import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-from utilities.cust_logger import LogGen
-from utilities.read_props import ReadCfg
+from Utilities.cust_logger import LogGen
+from Utilities.read_props import ReadCfg
 
 logger = LogGen.loggen(__name__)
 
