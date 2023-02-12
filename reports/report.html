@@ -253,7 +253,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 07-Feb-2023 at 22:46:39 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 12-Feb-2023 at 19:25:57 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -278,7 +278,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.7</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 37.81 seconds. </p>
+    <p>2 tests ran in 7.33 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -293,38 +293,38 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">testCases/TestHome.py::Test_001_Home::test_home_page_title_fail</td>
-          <td class="col-duration">18.83</td>
+          <td class="col-name">tests/test_home.py::Test_001_Home::test_home_page_title_fail</td>
+          <td class="col-duration">4.55</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;testCases.TestHome.Test_001_Home object at 0x00000284799042E0&gt;, setup = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;d69e6a32c39215826bc9acd9fe76c3d4&quot;)&gt;, caplog = &lt;_pytest.logging.LogCaptureFixture object at 0x00000284798DBCA0&gt;<br/><br/>    def test_home_page_title_fail(self, setup, caplog):<br/>        caplog.set_level(logging.INFO, logger=__name__)<br/>        logger.info(&quot;**** Test_001_Home ****&quot;)<br/>        logger.info(&quot;**** test_home_page_title_fail ****&quot;)<br/>    <br/>        self.driver = setup<br/>        #self.driver.get(self.getBaseUrl())<br/>        self.homePage = HomePage(self.driver)<br/>        self.page_title = self.homePage.get_title()<br/>        if self.page_title == self.get_title_fail:<br/>            assert True<br/>            self.driver.close()<br/>            logger.info(&quot;**** test_home_page_title_fail PASSED ****&quot;)<br/>        else:<br/>            self.homePage.save_scr(&#x27;test_home_page_title_fail&#x27;)<br/>            self.driver.close()<br/>            logger.error(&quot;**** test_home_page_title_fail FAIL ****&quot;)<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>testCases\TestHome.py:53: AssertionError<br/> -----------------------------Captured stderr setup------------------------------ <br/>2023-02-07 22:46:21,377:testCases.conftest:INFO: ###################################################################################
-2023-02-07 22:46:21,378:testCases.conftest:INFO: ################################   chrome   #######################################
-2023-02-07 22:46:21,378:testCases.conftest:INFO: ###################################################################################
-<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     testCases.conftest:conftest.py:30 ###################################################################################
-INFO     testCases.conftest:conftest.py:31 ################################   chrome   #######################################
-INFO     testCases.conftest:conftest.py:32 ###################################################################################<br/> ------------------------------Captured stderr call------------------------------ <br/>2023-02-07 22:46:22,490:testCases.TestHome:INFO: **** Test_001_Home ****
-2023-02-07 22:46:22,492:testCases.TestHome:INFO: **** test_home_page_title_fail ****
-2023-02-07 22:46:39,090:testCases.TestHome:ERROR: **** test_home_page_title_fail FAIL ****
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     testCases.TestHome:TestHome.py:38 **** Test_001_Home ****
-INFO     testCases.TestHome:TestHome.py:39 **** test_home_page_title_fail ****
-ERROR    testCases.TestHome:TestHome.py:52 **** test_home_page_title_fail FAIL ****<br/></div></td></tr></tbody>
+            <div class="log">[gw1] win32 -- Python 3.10.7 C:\Users\mawisniewski\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw1] win32 -- Python 3.10.7 C:\Users\mawisniewski\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.7 C:\Users\mawisniewski\AppData\Local\Programs\Python\Python310\python.exe<br/><br/>self = &lt;tests.test_home.Test_001_Home object at 0x000001E9B0AA4DF0&gt;, setup = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;10f1d05f8482f4d4208afe03d95494ef&quot;)&gt;, caplog = &lt;_pytest.logging.LogCaptureFixture object at 0x000001E9B0AA7E80&gt;<br/><br/>    def test_home_page_title_fail(self, setup, caplog):<br/>        caplog.set_level(logging.INFO, logger=__name__)<br/>        logger.info(&quot;**** Test_001_Home ****&quot;)<br/>        logger.info(&quot;**** test_home_page_title_fail ****&quot;)<br/>    <br/>        self.driver = setup<br/>        self.homePage = HomePage(self.driver)<br/>        self.page_title = self.homePage.get_title()<br/>        if self.page_title == self.get_title_fail:<br/>            assert True<br/>            self.driver.close()<br/>            logger.info(&quot;**** test_home_page_title_fail PASSED ****&quot;)<br/>        else:<br/>            self.homePage.save_scr(&#x27;test_home_page_title_fail&#x27;)<br/>            self.driver.close()<br/>            logger.error(&quot;**** test_home_page_title_fail FAIL ****&quot;)<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>tests\test_home.py:47: AssertionError[gw1] win32 -- Python 3.10.7 C:\Users\mawisniewski\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stderr setup------------------------------ <br/>2023-02-12 19:25:53,187:tests.conftest:INFO: ###################################################################################
+2023-02-12 19:25:53,189:tests.conftest:INFO: ################################   chrome   #######################################
+2023-02-12 19:25:53,199:tests.conftest:INFO: ###################################################################################
+<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     tests.conftest:conftest.py:30 ###################################################################################
+INFO     tests.conftest:conftest.py:31 ################################   chrome   #######################################
+INFO     tests.conftest:conftest.py:32 ###################################################################################<br/> ------------------------------Captured stderr call------------------------------ <br/>2023-02-12 19:25:55,358:tests.test_home:INFO: **** Test_001_Home ****
+2023-02-12 19:25:55,359:tests.test_home:INFO: **** test_home_page_title_fail ****
+2023-02-12 19:25:55,846:tests.test_home:ERROR: **** test_home_page_title_fail FAIL ****
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     tests.test_home:test_home.py:33 **** Test_001_Home ****
+INFO     tests.test_home:test_home.py:34 **** test_home_page_title_fail ****
+ERROR    tests.test_home:test_home.py:46 **** test_home_page_title_fail FAIL ****<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">testCases/TestHome.py::Test_001_Home::test_home_page_title</td>
-          <td class="col-duration">18.71</td>
+          <td class="col-name">tests/test_home.py::Test_001_Home::test_home_page_title</td>
+          <td class="col-duration">6.14</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -----------------------------Captured stderr setup------------------------------ <br/>2023-02-07 22:46:02,770:testCases.conftest:INFO: ###################################################################################
-2023-02-07 22:46:02,770:testCases.conftest:INFO: ################################   chrome   #######################################
-2023-02-07 22:46:02,770:testCases.conftest:INFO: ###################################################################################
-<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     testCases.conftest:conftest.py:30 ###################################################################################
-INFO     testCases.conftest:conftest.py:31 ################################   chrome   #######################################
-INFO     testCases.conftest:conftest.py:32 ###################################################################################<br/> ------------------------------Captured stderr call------------------------------ <br/>2023-02-07 22:46:03,873:testCases.TestHome:INFO: **** Test_001_Home ****
-2023-02-07 22:46:03,874:testCases.TestHome:INFO: **** test_home_page_title ****
-2023-02-07 22:46:20,257:testCases.TestHome:INFO: **** test_home_page_title PASSED ****
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     testCases.TestHome:TestHome.py:19 **** Test_001_Home ****
-INFO     testCases.TestHome:TestHome.py:20 **** test_home_page_title ****
-INFO     testCases.TestHome:TestHome.py:29 **** test_home_page_title PASSED ****<br/></div></td></tr></tbody></table></body></html>
+            <div class="log">[gw0] win32 -- Python 3.10.7 C:\Users\mawisniewski\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw0] win32 -- Python 3.10.7 C:\Users\mawisniewski\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.7 C:\Users\mawisniewski\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.7 C:\Users\mawisniewski\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stderr setup------------------------------ <br/>2023-02-12 19:25:53,165:tests.conftest:INFO: ###################################################################################
+2023-02-12 19:25:53,170:tests.conftest:INFO: ################################   chrome   #######################################
+2023-02-12 19:25:53,170:tests.conftest:INFO: ###################################################################################
+<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     tests.conftest:conftest.py:30 ###################################################################################
+INFO     tests.conftest:conftest.py:31 ################################   chrome   #######################################
+INFO     tests.conftest:conftest.py:32 ###################################################################################<br/> ------------------------------Captured stderr call------------------------------ <br/>2023-02-12 19:25:57,335:tests.test_home:INFO: **** Test_001_Home ****
+2023-02-12 19:25:57,336:tests.test_home:INFO: **** test_home_page_title ****
+2023-02-12 19:25:57,441:tests.test_home:INFO: **** test_home_page_title PASSED ****
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     tests.test_home:test_home.py:15 **** Test_001_Home ****
+INFO     tests.test_home:test_home.py:16 **** test_home_page_title ****
+INFO     tests.test_home:test_home.py:24 **** test_home_page_title PASSED ****<br/></div></td></tr></tbody></table></body></html>

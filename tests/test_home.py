@@ -1,9 +1,9 @@
 import logging
 
-from PageObjects.HomePage import HomePage
-from TestCases.BaseTest import BaseTest
-from Utilities.cust_logger import LogGen
-from Utilities.read_props import ReadCfg
+from page_objects.home_page import HomePage
+from tests.base_test import BaseTest
+from utilities.cust_logger import LogGen
+from utilities.read_props import ReadCfg
 
 logger = LogGen.loggen(__name__)
 

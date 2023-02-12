@@ -7,4 +7,4 @@ class BasePage:
         return self.driver.title
 
     def save_scr(self, filename):
-        self.driver.save_screenshot('.//Screenshots/' + filename + '.png')
+        self.driver.save_screenshot('.//screenshots/' + filename + '.png')
